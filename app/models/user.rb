@@ -1,4 +1,4 @@
 class User < ApplicationRecord
-    has_many :teams
+    belongs_to :team
     mount_uploader :avatar, AvatarUploader
 end
